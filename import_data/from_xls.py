@@ -1,7 +1,7 @@
 import datetime
 import logging
-from enum import Enum
 from datetime import date
+from enum import Enum
 
 import openpyxl
 from openpyxl.utils.exceptions import InvalidFileException
@@ -9,7 +9,7 @@ from openpyxl.workbook import Workbook
 from openpyxl.worksheet.worksheet import Worksheet
 
 from abstract.load_data import LoadData, MetricsTuple
-from db.model import Categories, Types, DataSources
+from db.model import Categories, DataSources, Types
 from exceptions import InvalidXLSXDataStructure
 
 # Оригинальные данные тестовые, без даты.

@@ -1,7 +1,7 @@
-import sys
-
-from services import read_from_xls, append_metrics, get_statistic
 import logging
+
+from services import append_metrics, get_statistic, read_from_xls
+
 FILENAME = '/Users/sergey/sss23/work/URSIP/Приложение_к_заданию_бек_разработчика.xlsx'
 year = 2023
 month = 7

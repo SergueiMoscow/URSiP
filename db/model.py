@@ -1,10 +1,9 @@
-import logging
-
-from sqlalchemy import create_engine, Column, Integer, Enum, Date, Index, String
+from sqlalchemy import (Column, Date, Enum, Index, Integer, String,
+                        create_engine)
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-from db.enums import Categories, Types, DataSources
+from db.enums import Categories, DataSources, Types
 from settings import DATABASE
 
 engine = create_engine(DATABASE, echo=False)

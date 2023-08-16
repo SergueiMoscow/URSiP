@@ -1,15 +1,15 @@
 import datetime
 import logging
-from typing import List, Tuple, NamedTuple
+from datetime import date
+from typing import List, NamedTuple
 
-from sqlalchemy import extract, func
+from sqlalchemy import func
 from sqlalchemy.orm import aliased
 
 from abstract.load_data import MetricsTuple
-from db.enums import Categories, Types, DataSources
-from db.model import Metrics, session, Log
+from db.enums import Categories, Types
+from db.model import Log, Metrics, session
 from import_data.from_xls import LoadFromXLSX
-from datetime import date
 
 
 class StatisticItem(NamedTuple):

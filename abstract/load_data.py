@@ -2,9 +2,7 @@ from abc import ABC, abstractmethod
 from datetime import date
 from typing import NamedTuple
 
-from typing_extensions import TypedDict
-
-from db.model import Categories, Types, DataSources
+from db.model import Categories, DataSources, Types
 
 
 class MetricsTuple(NamedTuple):
